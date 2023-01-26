@@ -1,7 +1,9 @@
 .service {
   height: 350px;
   /* width: 300px; */
-  background-size: 350px 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 .service-container {

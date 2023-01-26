@@ -1,5 +1,9 @@
 import React from 'react'
 import Service from '../Service/Service'
+import banner1 from "../../images/Banner/banner1.jpg";
+import newspapper from "../../images/Banner/newspaper.jpg"
+import city from "../../images/Banner/city.jpg";
+import village from "../../images/Banner/village.jpg"
 import "./Services.css"
 const Services = () => {
   return (
@@ -11,10 +15,10 @@ const Services = () => {
             <button className='btn btn-outline-light'>View shop</button>
         </div>
         <div className="services-container">
-        <Service></Service>
-        <Service></Service>
-        <Service></Service>
-        <Service></Service>
+        <Service image={newspapper}></Service>
+        <Service image={banner1}></Service>
+        <Service image={city}></Service>
+        <Service image={village}></Service>
         
 
         </div>
