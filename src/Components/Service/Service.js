@@ -1,23 +1,23 @@
-import React from 'react'
-import { Button, Card } from 'react-bootstrap'
-import "./Service.css"
-import banner1 from "../../images/Banner/banner1.jpg"
+import React from "react";
+import { Button, Card } from "react-bootstrap";
+import "./Service.css";
+import banner1 from "../../images/Banner/banner1.jpg";
+import newspapper from "../../images/Banner/newspaper.jpg"
 const Service = () => {
   return (
-    <div className='service'>
-       <Card style={{ width: '20rem' }}>
-      <Card.Img variant="top" src={banner1} />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <div className="service" style={{backgroundImage: `url(${newspapper})`}}>
+      <div className="service-container">
+        <div className="ps-2">
+        <h3>DIAMOND HEART RING</h3>
+        <p>$99</p>
+        </div>
+        <button className="add-to-cart-btn">
+        Add to cart
+      </button>
+      </div>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;
