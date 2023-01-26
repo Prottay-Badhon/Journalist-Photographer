@@ -3,6 +3,8 @@ import { Button, Form } from 'react-bootstrap'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from "../../firebase.init";
+import GithubLogin from '../SocialLogin/GithubLogin/GithubLogin';
+import GoogleLogin from '../SocialLogin/GoogleLogin/GoogleLogin';
 const Login = () => {
   const email = useRef("");
   const password = useRef("");
@@ -57,6 +59,8 @@ if(user){
                 </Link>
               </span>
             </p>
+            <GoogleLogin></GoogleLogin>
+            <GithubLogin></GithubLogin>
     </div>
   )
 }
