@@ -19,6 +19,11 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link to="/" as={Link}>Home</Nav.Link>
+            
+            <Nav.Link to="/blog" as={Link}>Blog</Nav.Link>
+            <Nav.Link to="/about" as={Link}>About</Nav.Link>
+
+
             {
               !user? <Nav.Link to="/registration" as={Link}>Registration</Nav.Link> : ""
             }
@@ -32,22 +37,7 @@ const Header = () => {
               Login
             </Nav.Link>
             }
-            <Nav.Link to="/blog" as={Link}>Blog</Nav.Link>
-            <Nav.Link to="/about" as={Link}>About</Nav.Link>
-
-
-
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+          
           </Nav>
         </Navbar.Collapse>
       </Container>

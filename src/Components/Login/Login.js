@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Button, Form } from 'react-bootstrap'
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from "../../firebase.init";
 import GithubLogin from '../SocialLogin/GithubLogin/GithubLogin';
@@ -9,6 +9,7 @@ const Login = () => {
   const email = useRef("");
   const password = useRef("");
   const navigate = useNavigate();
+  
   const [
     signInWithEmailAndPassword,
     user,
@@ -27,9 +28,11 @@ const Login = () => {
 if(user){
  navigate(from,{replace: true});
 }
-  
+ 
+
   return (
     <div className='container my-5 py-5' style={{width: "50%"}}>
+
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
@@ -56,11 +59,12 @@ if(user){
       <p>
              Not registered yet?
               <span>
-                <Link to="/registration" className="text-decoration-none fw-bold">
+                <Link to="/registration" className="text-decoration-none fw-bold ms-2">
                   Please Register
                 </Link>
               </span>
             </p>
+            <p><Link to="/forgetPassword" className='text-decoration-none fw-bold' >Forgot Password ?</Link></p>
           <div className="d-flex gap-5 justify-content-center">
           <GoogleLogin></GoogleLogin>
             <GithubLogin></GithubLogin>

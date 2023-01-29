@@ -11,6 +11,7 @@ import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import NotFound from "./Components/NotFound/NotFound";
 import Blog from "./Components/Blog/Blog";
 import About from "./Components/About/About";
+import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
         ></Route>
       <Route path="/blog" element={<Blog></Blog>}></Route>
       <Route path="/about" element={<About></About>}></Route>
+      <Route path="/forgetPassword" element={<ForgetPassword></ForgetPassword>}></Route>
+
       <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       
