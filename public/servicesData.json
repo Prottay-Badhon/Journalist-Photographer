@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "International News",
+        "price":  300 ,
+        "description": "World news or international news or even foreign coverage is the news media jargon for news from abroad, about a country or a global subject.",
+        "image": "images/services/service1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sports",
+        "price":  400 ,
+        "description": "Cricket,Football,Baseball,Hocky",
+        "image": "images/services/service2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Geo Political",
+        "price":  500 ,
+        "description": "Geopolitics focuses on political power linked to geographic space. In particular, territorial waters and land territory in correlation with diplomatic history.",
+        "image": "images/services/service3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cultural ",
+        "price":  250 ,
+        "description": " Culture is the characteristics and knowledge of a particular group of people",
+        "image": "images/services/service4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Economy ",
+        "price":  600 ,
+        "description": "An economy encompasses all of the activities related to the production, consumption",
+        "image": "images/services/service5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Education",
+        "price":  350,
+        "description": "Education is a purposeful activity directed at achieving certain aims",
+        "image": "images/services/service6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Crime Report ",
+        "price":   700,
+        "description": "3 brothers shot by Rohingyas in Teknaf, police say · 2 sued for stealing Humayun Ahmed's ",
+        "image": "images/services/service7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Disaster",
+        "price":  450,
+        "description": "Disasters are serious disruptions to the functioning of a community that exceed its capacity to cope using its own resources",
+        "image": "images/services/service8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Health and Conscious",
+        "price":  750 ,
+        "description": "These examples have been automatically selected and may contain sensitive content that does not reflect the opinions or policies of Collins, ",
+        "image": "images/services/service9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Literature and Letters",
+        "price":   900,
+        "description": "Diaries, memoirs, and letters) rank among the world's greatest literature",
+        "image": "images/services/service10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Communism",
+        "price":   150,
+        "description": " As one of the many types of socialism, communism became the dominant political tendency",
+        "image": "images/services/service11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Agriculture",
+        "price":   390,
+        "description": "A social crisis (or alternately a societal crisis) is a crisis in which the basic structure of a society experience.",
+        "image": "images/services/service12.jpg"
+    }
+]
