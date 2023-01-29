@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   position: relative;
 }
+.service a{
+  text-decoration: none;
+}
 .service-container {
   position: absolute;
   color: white;

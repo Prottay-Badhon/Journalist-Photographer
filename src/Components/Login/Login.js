@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from "../../firebase.init";
 import GithubLogin from '../SocialLogin/GithubLogin/GithubLogin';
 import GoogleLogin from '../SocialLogin/GoogleLogin/GoogleLogin';
@@ -22,12 +22,14 @@ const Login = () => {
     signInWithEmailAndPassword(inputEmail,inputPassword);
     console.log(inputEmail,inputPassword);
   }
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 if(user){
- navigate("/");
+ navigate(from,{replace: true});
 }
   
   return (
-    <div className='container my-5' style={{width: "50%"}}>
+    <div className='container my-5 py-5' style={{width: "50%"}}>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
@@ -59,8 +61,10 @@ if(user){
                 </Link>
               </span>
             </p>
-            <GoogleLogin></GoogleLogin>
+          <div className="d-flex gap-5 justify-content-center">
+          <GoogleLogin></GoogleLogin>
             <GithubLogin></GithubLogin>
+          </div>
     </div>
   )
 }

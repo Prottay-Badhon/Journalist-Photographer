@@ -1,0 +1,8 @@
+.btn-google-login{
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background: rgb(157 29 0);
+}

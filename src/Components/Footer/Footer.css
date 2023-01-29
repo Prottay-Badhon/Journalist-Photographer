@@ -1,0 +1,32 @@
+footer .signup-btn{
+    border: 0;
+    background-color: orangered;
+    padding: 8px 40px;
+    color: white;
+    width: 50%;
+    margin-top: 15px;
+}
+footer input{
+    border: none;
+    outline: none;
+    background-color: black;
+    border-bottom: 2px solid lightgray;
+    padding: 8px 0;
+    color: lightgray;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+footer .facebook,.twitter,.instagram,.github{
+    margin-left: 15px;
+    font-size: 25px;
+}
+footer ul li{
+    list-style-type: none;
+    margin: 3px 0;
+}

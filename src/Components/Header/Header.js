@@ -32,6 +32,7 @@ const Header = () => {
               Login
             </Nav.Link>
             }
+            <Nav.Link to="/blog" as={Link}>Blog</Nav.Link>
 
 
 

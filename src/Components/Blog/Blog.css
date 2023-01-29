@@ -1,0 +1,13 @@
+.blog{
+    display: flex; 
+    justify-content: center;
+   
+    margin: 100px;
+
+}
+.table thead th{
+    padding: 15;
+}
+.table  tbody td{
+    padding: 20px 15px;
+}
