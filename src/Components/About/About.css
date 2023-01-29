@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px;
+  align-items: center;
+}
+.about .img-container {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  background-image: url("../../images//me.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
