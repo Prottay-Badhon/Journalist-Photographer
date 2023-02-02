@@ -4,11 +4,11 @@ import "./Blog.css";
 const Blog = () => {
   return (
     <div className="blog">
-      <h2>Difference between authorization and authentication</h2>
-      <Table striped className="table my-5">
+<h1>Difference between authorization and authentication</h1>
+      <Table striped className="table my-5" responsive>
         <thead>
           <tr>
-            <th></th>
+            <th>#</th>
             <th>Authentication</th>
             <th>Authorization</th>
           </tr>
@@ -60,8 +60,9 @@ const Blog = () => {
         </tbody>
       </Table>
 
-      <h2> Why are we using firebase ? </h2>
       <ul>
+      <h2> Why are we using firebase ? </h2>
+
         <li>Firebase, Backend-as-a-Service (BaaS), is a platform by Google that provides functionalities and helps with the backend development of your Android, iOS, or web and even some products that support Unity3D too.</li>
         <li>Firebase Database: used to store users data like chat messages, users details and other metadata</li>
         <li>Firebase Cloud Storage: used to store user-generated content like the profile picture, multimedia messages, etc.</li>
@@ -69,8 +70,9 @@ const Blog = () => {
         <li>Firebase Remote Config: used to perform A/B testing on the go
 </li>
       </ul>
-      <h2>What other options do you have to implement authentication ?</h2>
       <ul>
+      <h2>What other options do you have to implement authentication ?</h2>
+
         <li>Auth0</li>
         <li>MongoDB</li>
         <li>Passport</li>

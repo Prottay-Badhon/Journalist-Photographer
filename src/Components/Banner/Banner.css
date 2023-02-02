@@ -1,37 +1,65 @@
-.btn-photographer{
-    border: 0;
-    background: #ff8e99;
-    font-size: 20px;
-    padding: 10px 30px;
-    margin: 30px 0;
-    border-radius: 0 15px 0 15px;
-}
-.my-carousel img{
-    height: 700px;
-}
-.my-banner{
- background-image: url("../../images/Banner/person.jpg");  
- background-position: center; 
- background-size: 100% 700px;
- background-repeat: no-repeat;
- height: 700px;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-.photographer-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.my-banner p{
-    font-size: 30px;
-    color: #346887;
+.btn-photographer {
+  border: 0;
+  background: #346887;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 30px 0;
 
+  color: white;
 }
-.my-banner h1{
-    font-size: 90px;
-    color: #346887;
+.my-carousel img {
+  height: 700px;
+}
+.my-banner {
+  background-image: url("../../images/Banner/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photographer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.my-banner p {
+  font-size: 30px;
+  color: #346887;
+}
+.my-banner h1 {
+  font-size: 90px;
+  color: #346887;
+}
+@media screen and (max-width: 768px) {
+    .my-banner{
+        flex-direction: column;
+        height: 400px;
+    }
+    
+  .photographer-container h1{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .photographer-container{
+    margin-top: 200px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .btn-photographer{
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .my-carousel img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .my-banner{
+    height: 900px;
+  }
 }

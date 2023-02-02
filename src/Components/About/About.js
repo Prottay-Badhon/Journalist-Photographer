@@ -16,9 +16,9 @@ const About = () => {
         The process to acquire deep knowledge I am following the documentation
         about React js organization website. Currently I am practicing about 6 or
         7 hours in a day. I also organize my social link like github, linkedin,
-        gitlab, protfolio website. Now i have about 49 github repositories with
+        gitlab, protfolio website. Now I have about 49 github repositories with
         live site link. My target is to develope a full frontend and backend
-        website with responsive layout.
+        website with responsive layout.Thank you so much for valuable time.
       </p>
     </div>
   );

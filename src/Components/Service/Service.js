@@ -2,10 +2,8 @@ import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Service.css";
-// style={{backgroundImage: `url(${props.image})`}}
 const Service = (props) => {
   const {id,name,price,description,image}=props.service;
-  console.log(image);
   return (
     <div className="service" style={{backgroundImage: `url(${image})`}}>
       <div className="service-container">
@@ -15,7 +13,7 @@ const Service = (props) => {
        
         <p>{description}</p>
         </div>
-        <Link to="/checkout">
+        <Link to={`/checkout/${id}`}>
         <button className="add-to-cart-btn">
         Add to cart
       </button>

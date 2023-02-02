@@ -22,7 +22,7 @@ const ForgetPassword = () => {
     <div className='d-flex justify-content-center py-5'>
   
         {error? <p className='text-danger fw-bold'>{error.message}</p> : ""}
-      <Form onSubmit={handleForgetPassword} className="w-50 my-5">
+      <Form onSubmit={handleForgetPassword} className="w-75 my-5">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             type="email"

@@ -6,3 +6,10 @@
     align-items: center;
     background: rgb(28, 28, 48);
 }
+@media screen and (max-width: 768px) {
+    .btn-github-login{
+        font-size: 12px;
+    padding: 10px 8px;
+
+    }
+}

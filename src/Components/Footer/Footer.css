@@ -30,3 +30,23 @@ footer ul li{
     list-style-type: none;
     margin: 3px 0;
 }
+@media screen and (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icon,.support,.photographer{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    footer{
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 50px 0;
+    }
+    .social-icon,.support,.photographer{
+        width: 100%;
+    }
+}

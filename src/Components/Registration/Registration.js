@@ -56,28 +56,28 @@ const Registration = () => {
               <input
                 type="text"
                 name="name"
-                id=""
+                id="name"
                 placeholder="Your Name"
                 required
               />
               <input
                 type="email"
                 name="email"
-                id=""
+                id="email"
                 placeholder="Your Email"
                 required
               />
               <input
                 type="password"
                 name="password"
-                id=""
+                id="password"
                 placeholder="Password"
                 required
               />
               <input
                 type="password"
                 name="confirmPassword"
-                id=""
+                id="confirmPassword"
                 placeholder="Confirm Password"
                 required
               />
@@ -94,7 +94,7 @@ const Registration = () => {
                 disabled={!agree}
                 type="submit"
                 name=""
-                id=""
+                id="sub"
                 className="btn btn-primary border-0"
                 value="Register"
               />

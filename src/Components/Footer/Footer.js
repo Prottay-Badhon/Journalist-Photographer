@@ -8,6 +8,7 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
@@ -53,7 +54,7 @@ const Footer = () => {
       <div className="stay-up-to-date d-flex flex-column">
         <p><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> <span className="ms-2">Stay up to date in latest from John Smith</span></p>
         <input type="email" placeholder="Enter your email address"/>
-        <button className="signup-btn">Sign Up</button>
+        <Link to="/registration"><button className="signup-btn">Sign Up</button></Link>
       </div>
     </footer>
   );

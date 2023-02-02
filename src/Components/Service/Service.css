@@ -17,13 +17,20 @@
 }
 .add-to-cart-btn {
   border: 0;
-  width: 335px;
+  /* width: 335px; */
+  width: 100%;
   background-color: #0e235e;
   color: white;
   padding: 10px 15px;
 
-  display: none;
 }
-.service:hover .add-to-cart-btn {
-  display: block;
+
+
+@media screen and (min-width: 769px) {
+  .add-to-cart-btn{
+    display: none;
+  }
+  .service:hover .add-to-cart-btn {
+    display: block;
+  }
 }

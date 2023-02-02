@@ -11,3 +11,14 @@
 .table  tbody td{
     padding: 20px 15px;
 }
+@media (max-width: 768px) {
+ .blog{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px 0;
+    margin: 20px;
+ }   
+ .table  tbody td{
+    padding: 5px;
+} 
+}

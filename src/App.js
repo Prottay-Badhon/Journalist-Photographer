@@ -25,7 +25,7 @@ function App() {
           element={<Registration></Registration>}
         ></Route>
         <Route
-          path="/checkout"
+          path="/checkout/:id"
           element={
             <RequireAuth>
               <Checkout></Checkout>
